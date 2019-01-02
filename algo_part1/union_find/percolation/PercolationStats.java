@@ -16,6 +16,7 @@ public class PercolationStats {
             if (trials <= 0) {
                 throw new IllegalArgumentException("trials must not be <= 0");
             }
+            this.trialsCount = new double[trials];
             for (int i = 0; i < trials; i++) {
                 Percolation grid = new Percolation(n);
                 int row = 0, col = 0;
@@ -26,7 +27,8 @@ public class PercolationStats {
                     grid.open(row, col);
                     if (grid.percolates()) {
                         // System.out.println("The system percolates!");
-                        System.out.println("The threshold value for "+ "case "+i+" is:" + grid.getThreshold());
+                        this.trialsCount[i] = grid.getThreshold();
+                        System.out.println("The threshold value for "+ "case "+(i+1)+" is = " + this.trialsCount[i]);
                         grid = null;
                         break;
                     }
@@ -62,8 +64,8 @@ public class PercolationStats {
             int n = Integer.parseInt(args[0]);
             int trials = Integer.parseInt(args[1]);
             PercolationStats stats = new PercolationStats(n, trials);
-            System.out.println("mean    =" + stats.mean());
-            System.out.println("stddev  =" + stats.stddev());
+            System.out.println("mean                    = " + stats.mean());
+            System.out.println("stddev                  = " + stats.stddev());
             String confidenceInterval = "[" + stats.confidenceLo() + ", " + stats.confidenceHi() +
                     "]";
             System.out.println("95% confidence interval = " + confidenceInterval);
