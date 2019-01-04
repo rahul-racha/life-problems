@@ -8,8 +8,8 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
-    double[] trialsCount;
-    double confidenceLevel = 1.96;
+    private static final double CONFIDENCE_LEVEL = 1.96;
+    private double[] trialsCount;
     public PercolationStats(int n, int trials)    // perform trials independent experiments on an n-by-n grid
     {
         try {
@@ -20,15 +20,16 @@ public class PercolationStats {
             for (int i = 0; i < trials; i++) {
                 Percolation grid = new Percolation(n);
                 int row = 0, col = 0;
-                while(true) {
-                    row = StdRandom.uniform(0, n);
-                    col = StdRandom.uniform(0, n);
+                while (true) {
+                    row = StdRandom.uniform(1, n+1);
+                    col = StdRandom.uniform(1, n+1);
                     // System.out.println("("+row+","+col+")");
                     grid.open(row, col);
                     if (grid.percolates()) {
                         // System.out.println("The system percolates!");
-                        this.trialsCount[i] = grid.getThreshold();
-                        System.out.println("The threshold value for "+ "case "+(i+1)+" is = " + this.trialsCount[i]);
+
+                        this.trialsCount[i] = (double) (grid.numberOfOpenSites())/(n*n);
+                        // System.out.println("The threshold value for "+ "case "+(i+1)+" is = " + this.trialsCount[i]);
                         grid = null;
                         break;
                     }
@@ -48,19 +49,19 @@ public class PercolationStats {
     }
     public double confidenceLo()                  // low  endpoint of 95% confidence interval
     {
-        double temp = confidenceLevel * stddev() / Math.sqrt(trialsCount.length);
+        double temp = CONFIDENCE_LEVEL * stddev() / Math.sqrt(trialsCount.length);
         return mean() - temp;
     }
     public double confidenceHi()                  // high endpoint of 95% confidence interval
     {
-        double temp = confidenceLevel * stddev() / Math.sqrt(trialsCount.length);
+        double temp = CONFIDENCE_LEVEL * stddev() / Math.sqrt(trialsCount.length);
         return mean() + temp;
     }
 
     public static void main(String[] args) {
         if (args.length == 2) {
-            System.out.println(args[0]);
-            System.out.println(args[1]);
+            // System.out.println(args[0]);
+            // System.out.println(args[1]);
             int n = Integer.parseInt(args[0]);
             int trials = Integer.parseInt(args[1]);
             PercolationStats stats = new PercolationStats(n, trials);
