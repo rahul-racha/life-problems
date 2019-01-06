@@ -4,6 +4,8 @@
     <list default="true" id="3a0fe85b-892e-40b9-9754-0f5cb8475b96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dequeue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deque.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,15 +24,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Dequeue.java">
+        <entry file="file://$PROJECT_DIR$/src/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="15" lean-forward="true" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+            <state relative-caret-position="262">
+              <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1477#1478#0" expanded="true" />
                 <element signature="e#1514#1515#0" expanded="true" />
                 <element signature="e#1597#1598#0" expanded="true" />
                 <element signature="e#1643#1644#0" expanded="true" />
+                <element signature="e#3238#3239#0" expanded="true" />
+                <element signature="e#3303#3304#0" expanded="true" />
+                <element signature="e#2735#2744#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,6 +58,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Dequeue.java" />
+        <option value="$PROJECT_DIR$/src/Deque.java" />
       </list>
     </option>
   </component>
@@ -76,6 +83,11 @@
               <item name="Dequeue" type="b2602c69:ProjectViewProjectNode" />
               <item name="stacks &amp; queues" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Dequeue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stacks &amp; queues" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -83,7 +95,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546736086255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546747109171" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -98,6 +110,13 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Deque" />
+      <module name="Deque" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="Deque" />
       <option name="VM_PARAMETERS" />
@@ -145,6 +164,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Deque" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -168,16 +192,17 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1602289" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1602289" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="FindBugs-IDEA" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -200,15 +225,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dequeue.java">
+    <entry file="file://$PROJECT_DIR$/src/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="15" lean-forward="true" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+        <state relative-caret-position="262">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1477#1478#0" expanded="true" />
             <element signature="e#1514#1515#0" expanded="true" />
             <element signature="e#1597#1598#0" expanded="true" />
             <element signature="e#1643#1644#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#2735#2744#0" expanded="true" />
           </folding>
         </state>
       </provider>
