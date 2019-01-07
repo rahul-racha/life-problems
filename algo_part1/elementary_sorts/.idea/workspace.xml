@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b85274-d0be-4f34-af11-d0013c4615ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque$DequeIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque$DequeIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque.class" afterDir="false" />
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Shellsort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="255">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="e#124#125#0" expanded="true" />
                 <element signature="e#148#149#0" expanded="true" />
@@ -90,7 +90,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546834418574" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546846272958" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,8 +168,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Shellsort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="e#124#125#0" expanded="true" />
             <element signature="e#148#149#0" expanded="true" />
