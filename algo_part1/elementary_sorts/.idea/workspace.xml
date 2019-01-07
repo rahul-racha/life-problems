@@ -4,7 +4,6 @@
     <list default="true" id="32b85274-d0be-4f34-af11-d0013c4615ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithm analysis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque$DequeIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque$DequeIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stacks &amp; queues/out/production/Deque/Deque.class" afterDir="false" />
@@ -90,7 +89,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546846272958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546846325520" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

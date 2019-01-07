@@ -12,15 +12,11 @@ class DNFsort {
         var end = arr.length - 1;
 
         while (middle <= end) {
-            if (arr[middle] == 0) {
-                this.swap(arr, middle, start);
-                ++start;
-                ++middle;
-            } else if (arr[middle] == 2) {
-                this.swap(arr, middle, end);
-                --end;
-                ++middle;
-            } else if (arr[middle] == 1) {
+            if (arr[middle] === 0) {
+                this.swap(arr, middle++, start++);
+            } else if (arr[middle] === 2) {
+                this.swap(arr, middle, end--);
+            } else if (arr[middle] === 1) {
                 ++middle;
             } else {
                 return;
@@ -30,7 +26,7 @@ class DNFsort {
 }
 
 var dnf = new DNFsort();
-var arr = [2, 2, 1, 1, 0, 0];
+var arr = [2, 0, 1, 2, 1, 1, 2, 0, 0, 1];
 dnf.sort(arr);
 console.log(arr);
 
