@@ -19,9 +19,9 @@ public class Shellsort<Item> {
         while (h < array.length/3) { h = (3 * h) + 1; }
         while (h >= 1) {
             for (int i = h; i < array.length; i++) {
-                for (int j = i; j >= h; j--) {
+                for (int j = i; j >= h; j=j-h) {
                     if (less(array[j], array[j-1])) {
-                        exchange(array, j, j-1);
+                        exchange(array, j, j-h);
                     }
                 }
             }

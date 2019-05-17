@@ -68,22 +68,32 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
     public Iterator<Item> iterator()         // return an independent iterator over items in random order
     {
-        return new BagIterator<Item>(this);
+        return new BagIterator<Item>();
     }
     private class BagIterator<Item> implements Iterator<Item> {
-        RandomizedQueue randomQue;
         int index = 0;
-        public BagIterator(RandomizedQueue que) {
-            this.randomQue = que;
+        Item[] shuffledBag;
+        public BagIterator() {
+            shuffledBag = (Item[]) Bag.clone();
+            int randomNumber = 0;
+            for (int i = 0; i < count; i++) {
+                randomNumber = getRandomNumberInRange(0, count - 1);
+                swap(i, randomNumber);
+            }
+        }
+        private void swap(int a, int b) {
+            Item temp = shuffledBag[a];
+            shuffledBag[a] = shuffledBag[b];
+            shuffledBag[b] = temp;
         }
         public boolean hasNext() {
-            return index < randomQue.count;
+            return index < count;
         }
         public Item next() {
-            if (index > randomQue.count) {
+            if (index > count) {
                 throw new NoSuchElementException();
             }
-            return (Item) randomQue.Bag[index++];
+            return (Item) shuffledBag[index++];
         }
         public void remove() {
             throw new UnsupportedOperationException();
@@ -91,6 +101,24 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
     public static void main(String[] args)   // unit testing (optional)
     {
+        RandomizedQueue<Integer> que = new RandomizedQueue<>();
+        que.enqueue(3);
+        que.enqueue(4);
+        que.enqueue(5);
+        que.enqueue(6);
+        System.out.println(que.sample());
+        System.out.println(que.dequeue());
+        System.out.println(que.sample());
+        System.out.println(que.dequeue());
+        System.out.println(que.sample());
+        System.out.println(que.sample());
 
+        System.out.println("*************************");
+        for (int item: que) {
+            System.out.println(item);
+        }
+        for (int item: que) {
+            System.out.println(item);
+        }
     }
 }

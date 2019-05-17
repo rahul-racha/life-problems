@@ -13,7 +13,7 @@ class DNFsort {
 
         while (middle <= end) {
             if (arr[middle] === 0) {
-                this.swap(arr, middle++, start++);
+                this.swap(arr, middle, start++);
             } else if (arr[middle] === 2) {
                 this.swap(arr, middle, end--);
             } else if (arr[middle] === 1) {
