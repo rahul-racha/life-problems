@@ -1,0 +1,19 @@
+//Algo
+let level = {s: 0};
+let parent = {s: nil};
+let frontier = [s];
+i = 1;
+while frontier {
+    let next = [];
+    for u in frontier {
+        for v in Adj[u] {
+            if v does not exist in level {
+                level[v] = i;
+                next.append(v);
+                parent[v] = u;
+            }
+        }
+    }
+    frontier = next;
+    i = i+1;
+}
