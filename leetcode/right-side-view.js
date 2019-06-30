@@ -1,3 +1,8 @@
+// Runtime: 44 ms, faster than 100.00 % of JavaScript online submissions
+// for Binary Tree Right Side View.
+// Memory Usage: 34.1 MB, less than 79.95 % of JavaScript online submissions
+// for Binary Tree Right Side View.
+
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
